@@ -1,0 +1,60 @@
+$ultra4k: 2560px;
+$laptopL: 1440px;
+$laptop: 1024px;
+
+@mixin ultra4k {
+    @media all and (max-width: $ultra4k) {
+        @content;
+    }
+}
+
+@mixin laptopL {
+    @media all and (max-width: $laptopL) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media all and (max-width: $laptop){
+        @content;
+    }
+}
+
+// Tamaño personalizado1
+@mixin tabletL {
+    @media all and (min-width: 769px) and (max-width: 1023px){
+        @content;
+    }
+}
+
+// tamaño para la parte de el header
+@mixin menu-mobile {
+    @media all and (max-width: 768px) {
+        @content;
+    }
+}
+// Fin tamaño personalizado
+
+@mixin tablet {
+    @media all and (min-width: 676px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tabletS {
+    @media all and (max-width: 675px) {
+        @content;
+    }
+}
+
+@mixin mobileL {
+    @media all and (max-width: 499px) {
+        @content;
+    }
+}
+
+@mixin mobileS {
+    @media all and (max-width: 375px) {
+        @content;
+    }
+}

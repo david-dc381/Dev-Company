@@ -1,0 +1,33 @@
+/* IMPORTAMOS LOS ARCHIVOS MIXINS */
+@import "_mixins/fonts";
+@import "_mixins/devices";
+
+/* IMPORTAMOS LOS ARCHIVOS DE VARIABLES */
+@import "_variables/colors";
+
+/* IMPORTAMOS LOS ARCHIVOS PRINCIPALES */
+@import "_archivos_partes/header";
+@import "_archivos_partes/main";
+@import "_archivos_partes/footer";
+
+
+
+
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

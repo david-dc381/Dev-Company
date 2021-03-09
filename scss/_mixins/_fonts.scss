@@ -1,0 +1,16 @@
+$font-primary: 'Open Sans', sans-serif;
+
+@mixin font-light {
+    font-family: $font-primary;
+    font-weight: 300;
+}
+
+@mixin font-regular {
+    font-family: $font-primary;
+    font-weight: 400;
+}
+
+@mixin font-bold {
+    font-family: $font-primary;
+    font-weight: 800;
+}

@@ -1,0 +1,1735 @@
+main {
+    // Home
+    .home {
+        // Banner
+        overflow: hidden;
+        .banner {
+            width: 300%;
+            display: flex;
+            .img1 {
+                width: 100%;
+                background-image: url('../img/banner1.png');
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;    
+            }
+
+            .img2 {
+                width: 100%;
+                background-image: url('../img/banner2.jpg');
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;    
+            }
+
+            .img3 {
+                width: 100%;
+                background-image: url('../img/banner1.jpg');
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+            }
+
+            // Información Banner
+            .info-banner {
+                width: 100%;
+                padding: 16.5rem 0 26rem 0;
+
+                @include tabletL {
+                    padding: 16.5rem 0 7rem 0;
+                }
+
+                @include tablet {
+                    padding: 16.5rem 0 7rem 0;
+                }
+
+                @include tabletS {
+                    padding: 9rem 0 5rem 0;
+                }
+
+                @include mobileL {
+                    padding: 9rem 0 3rem 0;
+                }
+
+                .title {
+                    text-align: center;
+                    h1 {
+                        color: $color-blanco;
+                        @include font-bold;
+                        font-size: 3.5rem;
+                        span {
+                            color: $color-rojo;
+                        }
+
+                        @include tabletL {
+                            font-size: 2.2rem;
+                        }
+
+                        @include tablet {
+                            font-size: 2.2rem;
+                        }
+
+                        @include tabletS {
+                            font-size: 2rem;
+                            padding: 50px 0;
+                        }
+
+                        @include mobileL {
+                            font-size: 1.5rem;
+                            padding: 15px 0;
+                        }
+                    }
+                    
+                    p {
+                        margin: 0 auto;
+                        max-width: 56%;
+                        color: $color-blanco;
+                        padding: 10px;
+                        line-height: 1.7rem;
+                        @include font-light();
+                        font-size: .875rem;
+
+                        @include ultra4k {
+                            max-width: 35%;
+                        }
+
+                        @include laptopL {
+                            max-width: 56%;
+                        }
+
+                        @include tabletL {
+                            font-size: .7rem;
+                        }
+
+                        @include tablet {
+                            font-size: .7rem;
+                        }
+
+                        @include tabletS {
+                            font-size: .7rem;
+                            max-width: 70%;
+                        }
+
+                        @include mobileL {
+                            font-size: .6rem;
+                            max-width: 90%;
+                            line-height: 1.5rem;
+                        }
+
+                        @include mobileS {
+                            font-size: .5rem;
+                            max-width: 90%;
+                            line-height: 1.2rem;
+                        }
+                    }
+
+                    // .ultima {
+                    //     background-color: rgba(0, 132, 255, 0.027);
+                    //     color: rgb(204, 204, 204);
+                    // }
+                }
+                // Boton ver más
+                .button  {
+                    display: flex;
+                    justify-content: center;
+                    margin: 20px auto;
+                    border: 1px solid $color-blanco;
+                    width: 20%;
+                    padding: 20px 30px;
+                    color: $color-blanco;
+                    @include font-bold();
+                    font-size: .875rem;
+                    border-radius: 20px;
+
+                    @include ultra4k {
+                        width: 10%;
+                    }
+
+                    @include laptopL {
+                        width: 20%;
+                    }
+
+                    @include tabletL {
+                        font-size: .6rem;
+                        padding: 10px 30px;
+                    }
+
+                    @include tablet {
+                        font-size: .6rem;
+                        padding: 10px 30px;
+                    }
+
+                    @include tabletS {
+                        font-size: .5rem;
+                        padding: 10px 10px;
+                    }
+
+                    @include mobileL {
+                        width: 30%;
+                        font-size: .45rem;
+                        padding: 10px 10px;
+                    }
+
+                    &:hover {
+                        background-color: rgba(209, 10, 10, 0.733);
+                        color: $color-blanco;
+                    }
+                }
+            }
+        }
+        // Fin Banner
+
+        // Info Work
+        .info-work {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            @include tabletL {
+                padding-bottom: 60px;    
+            }
+
+            @include tablet {
+                padding-bottom: 60px;    
+            }
+
+            @include tabletS {
+               padding-bottom: 50px;
+            }
+
+            // Targetas de información
+            .info {
+                display: flex;
+                color: $color-azul;
+                margin: 50px;
+                
+                .title {
+                    background-color: $color-blanco;
+                    padding: 20px 20px;
+                    max-width: 268px;
+                    box-shadow: -7px 5px 25px 1px #dedddd;
+
+                    @include tablet {
+                        max-width: 200px;
+                        height: 180px;
+                    }
+
+                    @include tabletS {
+                        max-width: 180px;
+                        height: 160px;
+                    }
+
+                    @include mobileL {
+                        max-width: 150px;
+                        height: 120px;
+                    }
+
+                    @include mobileS {
+                        max-width: 200px;
+                        height: 118px;
+                        padding: 15px 15px;
+                    }
+
+                    h2{
+                        @include font-bold();
+                        padding: .8rem 0;
+                        font-size: .9rem;
+
+                        @include tablet {
+                           padding: .5rem 0;
+                        }
+
+                        @include tabletS {
+                            padding: .5rem 0;
+                            font-size: .7rem;
+                        }
+
+                        @include mobileL {
+                            padding: .2rem 0;
+                            font-size: .55rem;
+                        }
+
+                        @include mobileS {
+                           padding-bottom: .51rem;
+                           padding-top: 3px;
+                        }
+                    }
+                    
+                    p {
+                        @include font-light();
+                        color: #6c7885;
+                        line-height: 2rem;
+                        font-size: .875rem;
+                        padding-bottom: 17px;
+
+                        @include tablet {
+                           font-size: .7rem;
+                           line-height: 1rem;
+                        }
+
+                        @include tabletS {
+                            font-size: .66rem;
+                            line-height: 1rem;
+                        }
+
+                        @include mobileL {
+                            font-size: .53rem;
+                            line-height: .8rem;
+                        }
+
+                        @include mobileS {
+                            font-size: .45rem;
+                        }
+                    }
+                }
+
+                @include tablet {
+                   img {
+                       width: 200px;
+                       height: 180px;
+                   }
+                }
+
+                @include tabletS {
+                    img {
+                        width: 200px;
+                        height: 160px;
+                    }
+                }
+
+                @include mobileL {
+                    img {
+                        width: 150px;
+                        height: 120px;
+                    }
+                }
+
+                @include mobileS {
+                    img {
+                        width: 115px;
+                        height: 117px;
+                    }
+                }
+            }
+            // Fin de targetas de información
+
+            // Información para usuario
+            .message-user {
+                max-width: 30%;
+                margin: auto 0;
+
+                @include tabletL {
+                    max-width: 52%;
+                }
+
+                @include tablet {
+                    max-width: 52%;
+                }
+
+                @include tabletS {
+                    max-width: 65%;
+                }
+
+                .message {
+                    h2 {
+                        @include font-bold();
+                        font-size: 1.5rem;
+                        color: $color-azul;
+                        text-transform: uppercase;
+                        padding-bottom: 30px;
+                        text-align: justify;
+
+                        @include laptop {
+                            text-align: left;
+                            word-spacing: 17px;
+                        }
+
+                        @include tabletL {
+                            text-align: left;
+                            word-spacing: 25px;
+                        }
+
+                        @include tabletS {
+                            text-align: left;
+                            font-size: 1.2rem;
+                        }
+
+                        @include mobileL {
+                            text-align: left;
+                            word-spacing: 10px;
+                            font-size: 1rem;
+                        }
+
+
+                        span {
+                            @include font-light();
+                        }
+                    }
+
+                    p {
+                        @include font-light();
+                        font-size: .8rem;
+                        line-height: 22px;
+                        text-align: justify;
+                        color: #6c7885;
+
+                        @include tabletS {
+                           font-size: .7rem;
+                        }
+
+                        @include mobileL {
+                            font-size: .57rem;
+                        }
+                    }
+                    .segundo {
+                        max-width: 85%;
+                        padding-bottom: 50px;
+
+                        @include tabletS {
+                            padding-bottom: 30px;
+                            margin-top: -15px;
+                        }
+                    }
+                    a {
+                        background-color: $color-rojo;
+                        color: $color-blanco;
+                        @include font-bold();
+                        font-size: .8rem;
+                        padding: 20px 60px;
+                        border-radius: 20px;
+
+                        @include tabletL {
+                            margin: 0 30%;
+                            font-size: .6rem;
+                            padding: 15px 40px;
+                        }
+
+                        @include tablet {
+                            font-size: .6rem;
+                            padding: 15px 40px;
+                        }
+
+                        @include tabletS {
+                            font-size: .5rem;
+                            padding: 13px 30px;
+                        }
+                    }
+                }
+            }
+            // Fin Información para usuario
+        }
+        // Fin Info Work
+    }
+    /* Fin Home */
+
+
+    /* Pages */
+    .pages {
+        background: $color-gris;
+        // Titulo
+        .title {
+            padding: 50px 0;
+            
+            @include mobileS {
+                width: 100%;
+            }
+
+            h2 {
+                text-align: center;
+                @include font-bold();
+                color: $color-azul;
+                font-size: 2.25rem;
+                padding: 20px 0;
+
+                @include tabletL {
+                    font-size: 1.6rem;
+                }
+
+                @include tablet {
+                    font-size: 1.6rem;
+                }
+
+                @include tabletS {
+                    font-size: 1.2rem;
+                }
+
+                @include mobileL {
+                    font-size: 1rem;
+                    padding: 20px 20px;
+                }
+            }
+            p {
+                margin: 0 auto;
+                max-width: 58%;
+                text-align: center;
+                @include font-light();
+                font-size: .8rem;
+                color: #6c7885;
+                line-height: 28px;
+
+                @include ultra4k {
+                    width: 30%;
+                }
+
+                @include laptopL {
+                    width: 58%;
+                }
+
+                @include tabletL {
+                    font-size: .7rem;
+                }
+
+                @include tablet {
+                    font-size: .7rem;
+                }
+
+                @include tabletS {
+                    font-size: .6rem;
+                    line-height: 20px;
+                }
+
+                @include mobileS {
+                    width: 100%;
+                    font-size: .55rem;
+                    line-height: 17px;
+                }
+            }
+        }
+        // Fin Titulo
+
+        // Secciones Info
+        .secciones-info:not(.boton) {
+            nav {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                li {
+                    margin: 0 30px;
+                    @include font-bold();
+                    font-size: .875rem;
+
+                    a {
+                        color: $color-azul;
+                    }
+
+                    @include tabletS {
+                        margin: 0 20px;
+                        font-size: .7rem;
+                    }
+
+                    @include mobileL {
+                        margin: 0 10px;
+                        font-size: .6rem;
+                    }
+                }
+            }
+
+            // Group pages
+            .group-pages {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap; 
+                justify-content: center;
+                margin: 0 auto;
+                max-width: 100%;
+                padding: 70px 0;
+
+                @include laptop {
+                    padding-bottom: 0;
+                }
+
+                .page1 {
+                    padding: 0 20px;
+                    
+                    @include laptop {
+                        width: 360px;
+                        padding: 0;
+                        margin: 0;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    @include tabletS {
+                        width: 300px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    @include mobileL {
+                        width: 160px;
+                        height: 100px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    @include tabletS {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        img {
+                            width: 75%;
+                            height: 50%;
+                        }
+                    }
+
+                    @include mobileL {
+                       img {
+                           width: 98%;
+                           height: 100%;
+                       }
+                    }
+
+                    .page2-page3 {
+                        padding-top: 15px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        @include laptop {
+                            display: flex;
+                            img {
+                                width: 51%;
+                                padding: 0 3px;
+                            }
+                        }
+
+                        @include tabletS {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-end;
+                            padding-top: 5px;
+                            img {
+                                width: 38%;
+                                height: 100%;
+                            }
+                        }
+
+                        @include mobileL {
+                            img {
+                                width: 50%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .page4 {
+                    img {
+                        height: 688px;
+                    }
+                }
+                
+                @include laptop {
+                    .page4 {
+                        display: flex;
+                        width: 300px;
+                        padding: 0 20px;
+
+                        @include tabletL {
+                            padding-right: 0;
+                            width: 250px;
+                        }
+
+                        @include tabletS {
+                            width: 200px;
+                            padding: 0 5px;
+                        }
+
+                        img {
+
+                            width: 90%;
+                            height: 76%;
+                            @include tabletL {
+                                width: 90%;
+                                height: 86%;
+                            }
+                        }
+
+                        @include tabletS {
+                            img {
+                                width: 60%;
+                                height: 100%;
+                            }
+                        }
+
+                        @include mobileL {
+                            width: 100px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                         }
+                    }
+                }
+            }
+            // Fin Group pages
+            .boton {
+                display: flex;
+                justify-content: center;
+
+                a {
+                    background-color: $color-rojo;
+                    color: $color-blanco;
+                    @include font-bold();
+                    font-size: .8rem;
+                    padding: 20px 60px;
+                    border-radius: 20px;
+
+                    @include tabletL {
+                        font-size: .6rem;
+                        padding: 15px 40px;
+                    }
+
+                    @include tablet {
+                        font-size: .6rem;
+                        padding: 15px 40px;
+                    }
+
+                    @include tabletS {
+                        margin-top: 40px;
+                        font-size: .5rem;
+                        padding: 13px 30px;
+                    }
+                }
+            }
+        }
+        // Fin Secciones Info
+
+        // Work Process
+        .work-process {
+            margin: 50px 0;
+            background: $color-azul;
+            .title {
+                h2 {
+                    color: $color-blanco; 
+                    @include tabletL {
+                        font-size: 1.6rem;
+                    }
+
+                    @include tablet {
+                        font-size: 1.6rem;
+                    }
+
+                    @include mobileL {
+                        font-size: 1rem;
+                    }
+                }
+
+                p {
+                    color: $color-blanco;
+                    @include tabletL {
+                        font-size: .67rem;
+                    }
+
+                    @include tablet {
+                        font-size: .67rem;
+                    }
+
+                    @include mobileL {
+                        width: 80%;
+                        font-size: .5rem;
+                    }
+
+                    @include mobileS {
+                        width: 100%;
+                        font-size: .49rem;
+                    }
+                    
+                }
+
+            }
+
+            .process {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                @include tabletL {
+                    padding-bottom: 50px;
+                }
+
+                @include tablet {
+                    padding-bottom: 50px;
+                }
+                
+                div {
+                    padding: 10px 20px 60px 20px;
+
+                    @include laptop {
+                        padding: 0 10px 50px 10px;
+                    }
+
+                    @include tabletL {
+                        padding: 0;
+                    }
+                    
+                    @include tablet {
+                        padding: 0;
+                    }
+
+                    img {
+                        transition: all .3s ease-out;
+                        padding: 0 20px;
+
+
+                        @include laptopL {
+                            padding: 0 10px;
+                        }
+
+                        @include tabletL {
+                            width: 100%;
+                            padding: 0 15px;
+                        }
+
+                        @include tablet {
+                            width: 100%;
+                            padding: 0 15px;
+                        }
+                    }
+
+                    // hacemos no visible la img de color rojo
+                    .red {
+                        transition: all .3s ease-out;
+                        display: none;
+                    }
+
+                    h3 {
+                        @include font-bold;
+                        font-size: .875rem;
+                        text-align: center;
+                        color: $color-blanco;
+                        line-height: 50px;
+
+                        @include laptop {   
+                            font-size: .7rem;
+                        }
+
+                        @include tabletL {
+                            font-size: .7rem;
+                        }
+
+                        @include tablet {
+                            font-size: .7rem;
+                        }
+                    }
+                }
+
+                // para el cambio de color de la img a rojo
+                div:hover {
+                    transition: all .3s ease-out;
+
+                    [alt="process1"] {
+                        display: none;
+                    }
+
+                    [alt="processRed1"] {
+                        transition: all .3s ease-out;
+                        display: inline;
+                    }
+
+                    [alt="process2"] {
+                        display: none;
+                    }
+
+                    [alt="processRed2"] {
+                        display: inline;
+                    }
+
+                    [alt="process3"] {
+                        display: none;
+                    }
+
+                    [alt="processRed3"] {
+                        display: inline;
+                    }
+
+                    [alt="process4"] {
+                        display: none;
+                    }
+
+                    [alt="processRed4"] {
+                        display: inline;
+                    }
+
+                    [alt="process5"] {
+                        display: none;
+                    }
+
+                    [alt="processRed5"] {
+                        display: inline;
+                    }
+
+                    [alt="process6"] {
+                        display: none;
+                    }
+
+                    [alt="processRed6"] {
+                        display: inline;
+                    }
+                }
+            }
+        }
+        // Fin Work Process
+    }
+    /* Fin Pages */
+
+
+    /* PORFOLIO */
+    .portfolio {
+        
+        // titulo
+        .title {
+            width: 60%;
+            text-align: center;
+            margin: 0 auto;
+
+            @include tabletS {
+                width: 75%;
+            }
+
+            @include mobileL {
+                width: 85%;
+            }
+
+            h2 {
+                @include font-bold;
+                font-size: 2.25rem;
+                color: $color-azul;
+                padding: 70px 0 30px 0;
+
+                @include tabletL {
+                    font-size: 1.6rem;
+                }
+
+                @include tablet {
+                    font-size: 1.6rem;
+                }
+
+                @include tabletS {
+                    font-size: 1.6rem;
+                    padding-top: 5px;
+                }
+
+                @include mobileL {
+                    font-size: 1rem;
+                }
+                
+            }
+            p {
+                @include font-light;
+                font-size: .875rem;
+                color: #828992;
+                line-height: 30px;
+
+                @include ultra4k {
+                    margin: 0 auto;
+                    width: 55%;
+                }
+
+                @include laptopL {
+                    width: 100%;
+                }
+
+                @include tabletL {
+                    font-size: .7rem;
+                }
+
+                @include tablet {
+                    font-size: .7rem;
+                }
+
+                @include tabletS {
+                    font-size: .7rem;
+                    line-height: 20px;
+                }
+
+                @include mobileL {
+                    font-size: .55rem;
+                }
+            }  
+
+        }
+        // fin titulo
+
+        // Group Services
+        .group-services {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 90px;
+
+            @include tabletL {
+                margin-top: 50px;
+            }
+
+            @include tablet {
+                margin-top: 50px;
+            }
+
+            @include tabletS {
+                margin-top: 50px;
+            }
+
+            .service {
+                width: 350px;
+                height: 315px;
+                text-align: center;
+                transition: all .3s ease-out;
+
+                
+                @include laptop {
+                   height: 260px;
+                }
+
+                @include tabletS {
+                    height: 210px;
+                }
+
+                .title {
+                    width: 250px;
+                    padding-top: 20px;
+
+                    @include tabletS {
+                       padding-top: 10px;
+                    }
+
+                    h3 {
+                        @include font-bold;
+                        font-size: .875rem;
+                        color: $color-azul;
+
+                        @include tabletS {
+                            font-size: .7rem;
+                        }
+
+                        @include mobileL {
+                            line-height: 25px;
+                        }
+                    }
+                    
+                    p {
+                        @include font-light;
+                        font-size: .8rem;
+
+                        @include tabletS {
+                            font-size: .65rem;
+                        }
+
+                        @include mobileL {
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+
+            .blue {
+                display: none;
+            }
+
+            .service:hover {
+                height: 270px;
+                padding: 30px 30px 80px 30px;
+                margin-bottom: 50px;
+                box-shadow: 2px 2px 13px black;
+                transition: all .3s ease-out;
+
+                [alt="servicio1"] {
+                    display: none;
+                }
+
+                [alt="servicioBlue1"] {
+                    display: inline;
+                }
+
+                [alt="servicio2"] {
+                    display: none;
+                }
+
+                [alt="servicioBlue2"] {
+                    display: inline;
+                }
+
+                [alt="servicio3"] {
+                    display: none;
+                }
+
+                [alt="servicioBlue3"] {
+                    display: inline;
+                }
+
+                [alt="servicio4"] {
+                    display: none;
+                }
+
+                [alt="servicioBlue4"] {
+                    display: inline;
+                }
+
+                [alt="servicio5"] {
+                    display: none;
+                }
+
+                [alt="servicioBlue5"] {
+                    display: inline;
+                }
+
+                [alt="servicio6"] {
+                    display: none;
+                }
+
+                [alt="servicioBlue6"] {
+                    display: inline;
+                }
+            }
+        }
+        // Fin Group Services
+
+        // Clients
+        .clients {
+            background-image: url('../img/portfolio/clients/bg-clients.png');
+            height: 715px;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            padding: 75px 0;
+
+            @include ultra4k {
+                height: 760px;
+            }
+
+            @include tabletS {
+                height: 700px;
+            }
+            
+            h2 {
+                @include font-bold();
+                font-size: 2.25rem;
+                color: $color-blanco;
+                padding-bottom: 90px;
+
+                @include tabletS {
+                    font-size: 1.6rem;
+                    padding-bottom: 60px;
+                }
+
+                @include mobileL {
+                    font-size: 1rem;
+                    padding-bottom: 60px;
+                }
+            }
+
+            .photo-client {
+                h3 {
+                    @include font-bold;
+                    font-size: .75rem;
+                    color: $color-rojo;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+
+                    @include tabletS {
+                        font-size: .7rem;
+                    }
+                }
+
+                p {
+                    @include font-bold;
+                    font-size: .875rem;
+                    color: $color-blanco;
+                    padding-bottom: 20px;
+
+                    @include tabletS {
+                        font-size: .75rem;
+                    }
+                }
+            }
+            
+            .testimony {
+                margin: 0 auto;
+                width: 770px;
+
+                @include tablet {
+                    width: 100%;
+                }
+
+                @include tabletS {
+                    width: 100%;
+                }
+
+                p {
+                    @include font-light;
+                    font-size: .875rem;
+                    color: $color-gris;
+                    line-height: 30px;
+                    padding-bottom: 20px;
+
+                    @include tabletL {
+                        margin: 0 auto;
+                        font-size: .75rem;
+                        width: 80%;
+                    }
+
+                    @include tablet {
+                        margin: 0 auto;
+                        font-size: .75rem;
+                        width: 80%;
+                    }
+
+                    @include tabletS {
+                        margin: 0 auto;
+                        font-size: .7rem;
+                        width: 80%;
+                        line-height: 25px;
+                    }
+
+                    @include mobileL {
+                        padding: 20px 0;
+                        width: 90%;
+                        font-size: .55rem;
+                    }
+                }
+            }
+        }
+        // Fin Clients
+    }
+    /* FIN PORTFOLIO */
+
+    /* Blog */
+    .blog {
+        background-color: $color-gris;
+        padding-bottom: 60px;
+        padding-top: 50px;
+
+        // titulo
+        .title {
+            width: 65%;
+            text-align: center;
+            margin: 0 auto;
+
+            @include mobileL {
+                width: 80%;
+            }
+
+            h2 {
+                @include font-bold;
+                font-size: 2.25rem;
+                color: $color-azul;
+                padding: 30px 0;
+
+                @include tabletL {
+                    font-size: 1.6rem;
+                }
+
+                @include tablet {
+                    font-size: 1.6rem;
+                }
+
+                @include tabletS {
+                    font-size: 1.6rem;
+                    padding: 20px 0;
+                }
+
+                @include mobileL {
+                    font-size: 1rem;
+                }
+            }
+            p {
+                @include font-light;
+                font-size: .875rem;
+                color: #828992;
+                line-height: 30px;
+
+                @include ultra4k {
+                    width: 55%;
+                    margin: 0 auto;
+                }
+
+                @include laptopL {
+                    width: 85%;
+                }
+
+                @include laptop {
+                    width: 100%;
+                }
+
+                @include tabletL {
+                    font-size: .7rem;
+                }
+
+                @include tablet {
+                    font-size: .7rem;
+                }
+
+                @include tabletS {
+                    font-size: .7rem;
+                    line-height: 25px;
+                }
+
+                @include mobileL {
+                    line-height: 20px;
+                    font-size: .55rem;
+                }
+            }  
+
+        }
+        // fin titulo
+
+        
+        // big news
+        .big-news {
+            max-width: 81%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 60px 0 40px 0;
+
+            @include ultra4k {
+                width: 60%;
+            }
+            @include laptopL {
+                width: 81%;
+            }
+            @include tabletL {
+               width: 100%;
+            }
+
+            @include tablet {
+                img {
+                    width: 35%;
+                }
+            }
+
+            @include tabletS {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+
+                img {
+                    width: 100%;
+                }
+            }
+            
+            .description {
+                padding: 0 30px;
+                box-shadow: 3px 1px 20px -5px #4c4a4a;
+                background-color: $color-blanco;
+
+                @include tablet {
+                    width: 100%;
+                    padding: 0 20px;
+                }
+
+                @include tabletS {
+                    width: 100%;
+                    padding: 0px 20px;
+                    padding-bottom: 20px;
+                }
+
+                h4 {
+                    @include font-bold;
+                    font-size: .75rem;
+                    color: $color-rojo;
+                    padding: 40px 0;
+
+                    @include laptop {
+                        padding: 20px 0;
+                    }
+
+                    @include tablet {
+                        font-size: .7rem;
+                        padding: 10px 0;
+                    }
+
+                    @include tabletS {
+                        font-size: .7rem;
+                        padding: 15px 0;
+                    }
+    
+                    @include mobileL {
+                        font-size: .6rem;
+                        padding-bottom: 0px;
+                    }
+
+                    @include mobileS {
+                        font-size: .5rem;
+                        padding-bottom: 0px;
+                    }
+                    
+                }
+
+                h3 {
+                    @include font-bold;
+                    font-size: .875rem;
+                    color: $color-azul;
+                    padding-bottom: 20px;
+
+                    @include tabletL {
+                        padding-bottom: 10px;
+                    }
+
+                    @include tablet {
+                        font-size: .7rem;
+                        padding: 5px 0;
+                    }
+
+                    @include tabletS {
+                        font-size: .7rem;
+                        padding: 10px 0;
+                    }
+
+                    @include mobileL {
+                        font-size: .65rem;
+                        padding: 15px 0;
+                    }
+
+                    @include mobileS {
+                        font-size: .6rem;
+                        padding: 15px 0;
+                    }
+                }
+
+                p {
+                    @include font-light;
+                    font-size: .875rem;
+                    color: #6c7885;
+                    line-height: 25px;
+
+                    @include laptop {
+                        font-size: .7rem;
+                    }
+
+                    @include tabletL {
+                        line-height: 17px;
+                    }
+
+                    @include tablet {
+                        line-height: 17px;
+                        font-size: .7rem;
+                    }
+                    
+                    @include tabletS {
+                        line-height: 20px;
+                        font-size: .7rem;
+                    }
+
+                    @include mobileL {
+                        line-height: 17px;
+                        font-size: .55rem;
+                    }
+
+                    @include mobileS {
+                        line-height: 15px;
+                        font-size: .5rem;
+                    }
+                }
+                
+                .more {
+                    @include font-bold;
+                    color: $color-azul;
+                    padding-top: 20px;
+
+                    @include laptop {
+                        padding-top: 10px;
+                    }
+                    @include tabletL {
+                        padding-bottom: 10px;
+                    }
+                    @include tablet {
+                        padding-bottom: 10px;
+                    }                    
+                }
+            }
+        }
+        // fin big news
+
+        // small news
+        .small-news {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            .news {
+                max-width: 340px;
+                background-color: $color-blanco;
+                padding: 0 15px 20px 30px;
+                margin: 20px 15px 0 15px;
+                box-shadow: 0px 0px 25px -7px #4c4a4a;
+
+                @include ultra4k {
+                    margin: 0 2.1%;
+                    max-width: 440px;
+                }
+
+                @include laptopL {
+                    max-width: 340px;
+                    margin-top: 20px;
+                }
+
+                @include tablet {
+                    max-width: 35%;
+                    height: 30%;
+                }
+
+                @include tabletS {
+                    max-width: 50%;
+                }
+
+                @include mobileL {
+                    max-width: 70%;
+                }
+                
+                h4 {
+                    @include font-bold;
+                    font-size: .75rem;
+                    color: $color-rojo;
+                    padding: 40px 0;
+
+                    @include tablet {
+                        font-size: .7rem;
+                        padding: 20px 0;
+                    }
+
+                    @include tabletS {
+                        font-size: .7rem;
+                        padding: 20px 0;
+                    }
+
+                    @include mobileL {
+                        font-size: .6rem;
+                        padding-bottom: 15px;
+                    }
+                }
+
+                h3 {
+                    @include font-bold;
+                    font-size: .875rem;
+                    color: $color-azul;
+                    padding-bottom: 20px;
+
+                    @include tablet {
+                        font-size: .7rem;
+                        padding-bottom: 20px;
+                    }
+
+                    @include tabletS {
+                        font-size: .7rem;
+                        padding-bottom: 20px;
+                    }
+
+                    @include mobileL {
+                        font-size: .6rem;
+                        padding-bottom: 15px;
+                    }
+                }
+
+                p {
+                    @include font-light;
+                    font-size: .875rem;
+                    color: #6c7885;
+                    line-height: 25px;
+
+                    @include tablet {
+                        font-size: .7rem;
+                        line-height: 20px;
+                    }
+
+                    @include tabletS {
+                        font-size: .7rem;
+                        line-height: 20px;
+                    }
+
+                    @include mobileL {
+                        font-size: .6rem;
+                        line-height: 17px;
+                    }
+                }
+                
+                .more {
+                    @include font-bold;
+                    color: $color-azul;
+                    padding-top: 20px;
+                }
+            }
+        }
+        // fin small news
+
+    }
+    /* Fin Blog */
+
+    /* Contacto */
+    .contact {
+        background: $color-gris;
+        padding: 30px 0;
+
+        .formulario {
+            background: $color-blanco;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding: 3% 5%;
+            box-shadow: 0px 0px 25px -7px #4c4a4a;
+
+            @include laptop {
+                width: 65%;
+            }
+
+            @include tabletL {
+                width: 65%;
+            }
+
+            @include tablet {
+                width: 75%;
+            }
+
+            @include tabletS {
+                width: 80%;
+            }
+
+            @include mobileL {
+                width: 85%;
+            }
+
+            @include mobileS {
+                width: 90%;
+            }
+
+            
+            .title {
+                h2 {    
+                    color: $color-azul;
+                    @include font-bold();
+                    font-size: 2rem;
+                    margin: 10px 0;
+                }
+
+                p {
+                    color: #828992;
+                    @include font-light();
+                    margin: 20px 0;
+                    font-size: .875rem;
+                }
+            }
+
+            .group {
+                .campos {
+                    position: relative;
+                    @include font-light();
+                    
+                    label {
+                        position: absolute;
+                        top: 25px;
+                        left: 0;
+                        font-size: .8rem;
+                        transition: all .3s ease-in;
+                    }
+
+                    .active {
+                        top: 0;
+                        left: 0;
+                        font-size: .7rem;
+                    }
+
+                    [type="text"], [type="email"], textarea {
+                        height: 100%;
+                        width: 100%;
+                        margin: 25px 0;
+                        padding: 10px 0;
+                        border: none;
+                        border-bottom: 2px solid #2d3f519e;
+                        outline: none;
+                    }
+
+                    textarea {
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 80px;
+                        min-height: 80px;
+                    }
+
+                    // estilos del mensaje de error de los input
+                    .error {
+                        position: absolute;
+                        top: 62px;
+                        font-size: .8rem;
+                        color: $color-rojo;
+                        @include font-light();
+                    }
+                }
+
+                .boton {
+                    [type="submit"] {
+                       @include font-light();
+                       display: flex;
+                       margin: 0 auto;
+                       padding: 15px 35px;
+                       background-color: #283b4ee3;
+                       border: none;
+                       color: $color-blanco;
+                       border-radius: 5px;
+                       cursor: pointer;
+                    }
+                    :hover {
+                        background-color: $color-azul;
+                    }
+                }
+            }
+        }
+    }
+    /* Fin Contacto */
+}
+
+/* Footer */
+footer {
+    background-color: $fondo-cafe;
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 50px;
+
+        li {
+            margin: 0 20px;
+            @include font-light;
+            font-size: .875rem;
+
+            @include mobileL {
+                margin: 0 10px;
+                font-size: .65rem;
+            }
+
+            a {
+                color: $color-blanco;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+        
+        i {
+            margin: 0 10px;
+            color: $color-rojo;
+        }
+    }
+
+    p {
+        text-align: center;
+        @include font-light;
+        font-size: .75rem;
+        color: $color-blanco;
+        padding-bottom: 40px;
+    }
+}
+/* Fin Footer */

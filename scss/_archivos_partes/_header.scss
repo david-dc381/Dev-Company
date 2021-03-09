@@ -1,0 +1,270 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: transparent; /* #1f2735eb  */
+    color: $color-blanco;
+    margin: 0 auto;
+
+    .menu-pc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        // Redes Sociales
+        .social {
+            margin: auto 3%;
+            
+            i {
+                margin: 0 15px;
+                font-size: .7rem;
+                color: $color-blanco;
+    
+                @include tabletL {
+                    margin: 0 10px;
+                }
+            }
+        }
+    
+        // Logo
+        .logo {
+            // margin: 0 4% 0 19%;
+            margin: 0 5% 0 10%;
+    
+            @include tabletL {
+                margin: 0 4% 0 10%;
+            }
+        }
+    
+        // Menu de Navegación
+        nav {
+            margin: auto 0;
+            display: flex;
+            
+            li {
+                margin: 0 10px;
+                a{
+                    color: $color-blanco;
+                    font-size: .7rem;
+                    @include font-light();
+    
+                    @include tabletL {
+                        font-size: .6rem;
+                    }
+                }
+    
+                i {
+                    font-size: .7rem;
+                }
+            }
+    
+        }
+        
+    }
+
+    .menu-mobil {
+        display: none;
+    }
+
+    @include menu-mobile {
+        .menu-pc {
+            display: none;
+        }
+    }
+
+
+    // Menu Mobil
+    @include menu-mobile {
+        .menu-mobil {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            // Redes Sociales
+            .social {
+                margin: 10% 0;
+                
+                i {
+                    margin: 0 10px;
+                    font-size: .7rem;
+                    color: $color-blanco;
+
+                    @include mobileL {
+                        margin: 0 6px;
+                        font-size: .7rem;
+                        margin-top: 10px;
+                    }
+
+                    @include mobileS {
+                        margin: 0 5px;
+                        font-size: .7rem;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .logo {
+                @include mobileL {
+                    img {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+
+            // contenedor menu
+            .icono-menu-movil {
+                padding: 20px 60px;
+
+                @include mobileL {
+                    padding: 20px 25px;
+                }    
+
+                i {
+                    font-size: 27px;
+
+                    @include mobileL {
+                        font-size: 20px;
+                    }                    
+                }
+            }
+        
+            // Menu de Navegación
+            .slide-menu {
+                z-index: 99;
+                position: fixed;
+                top: 61.5px;
+                left: -400px;
+                transition: all 1s cubic-bezier(0.4, 0, 1, 1);
+                width: 50%;
+                background-color: rgba(41, 56, 72, 0.90);
+                
+                .enlaces {
+                    padding: 15px 0;
+                    display: flex;
+                    nav {
+                        margin: 0 auto;
+                        
+                        li {
+                            margin: 15px 0;
+                            
+                            
+                            a {
+                                position: relative;
+                                left: -450px;
+                                display: flex;
+                                justify-content: center;
+                                color: $color-blanco;
+                                @include font-light;
+                                font-size: .7rem;
+                            }
+                        }
+
+                        // hacemos que cada enlace desaparezca denpués del otro, desde el último hasta el primero
+                        li:not(:last-child) {
+                            padding: 5px 30px;
+                            border-bottom: 1px solid $color-blanco;
+                        }
+
+                        li:nth-child(1) {
+                            a {
+                                position: relative;
+                                left: -450px;
+                                transition: all .8s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+
+                        li:nth-child(2) {
+                            a {
+                                position: relative;
+                                left: -450px;
+                                transition: all .7s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+
+                        li:nth-child(3) {
+                            a {
+                                position: relative;
+                                left: -450px;
+                                transition: all .6s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+
+                        li:nth-child(4) {
+                            a {
+                                position: relative;
+                                left: -450px;
+                                transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+
+                        li:nth-child(5) {
+                            a {
+                                position: relative;
+                                left: -450px;
+                                transition: all .4s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            // para ver el menu de celular
+            .active {
+                z-index: 99;
+                position: fixed;
+                top: 61.5px;
+                left: 0;
+                transition: all .3s cubic-bezier(0.4, 0, 1, 1);
+
+                .enlaces {
+                    nav {
+                        li:nth-child(1) {
+                            a {
+                                position: relative;
+                                left: 0;
+                                transition: all .4s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+
+                        // hacemos que cada enlace aparezca después de otro
+                        li:nth-child(2) {
+                            a {
+                                position: relative;
+                                left: 0;
+                                transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+
+                        li:nth-child(3) {
+                            a {
+                                position: relative;
+                                left: 0;
+                                transition: all .6s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+
+                        li:nth-child(4) {
+                            a {
+                                position: relative;
+                                left: 0;
+                                transition: all .7s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+
+                        li:nth-child(5) {
+                            a {
+                                position: relative;
+                                left: 0;
+                                transition: all .8s cubic-bezier(0.4, 0, 1, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Fin Menu Mobil
+}
